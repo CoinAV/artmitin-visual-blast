@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				artmitin: {
+					orange: '#FF6200',
+					dark: '#1A1A1A',
+					light: '#F8F8F8',
+					pink: '#ff69b4',
+					cyan: '#00ddeb'
 				}
 			},
 			borderRadius: {
@@ -84,12 +92,48 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				fadeIn: {
+					from: {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				slideIn: {
+					from: { 
+						transform: 'translateY(-50px)', 
+						opacity: '0' 
+					},
+					to: { 
+						transform: 'translateY(0)', 
+						opacity: '1' 
+					}
+				},
+				neonPulse: {
+					'0%, 100%': { 
+						boxShadow: '0 0 10px #00ddeb, 0 0 20px #00ddeb, 0 0 30px #00ddeb',
+						textShadow: '0 0 5px #ff69b4, 0 0 10px #ff69b4'
+					},
+					'50%': { 
+						boxShadow: '0 0 15px #00ddeb, 0 0 30px #00ddeb, 0 0 45px #00ddeb',
+						textShadow: '0 0 8px #ff69b4, 0 0 15px #ff69b4'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fadeIn 0.5s forwards',
+				'slide-in': 'slideIn 0.3s ease',
+				'neon-pulse': 'neonPulse 2s infinite'
+			},
+			backgroundImage: {
+				'hero-pattern': "url('/images/hero-bg.webp')"
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
