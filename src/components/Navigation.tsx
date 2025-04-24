@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu } from 'lucide-react';
 
@@ -47,6 +46,13 @@ const Navigation: React.FC = () => {
             className="font-semibold hover:text-artmitin-orange transition-colors"
           >
             Послуги
+          </a>
+          <a 
+            href="#portfolio" 
+            onClick={(e) => { e.preventDefault(); scrollToSection('portfolio'); }}
+            className="font-semibold hover:text-artmitin-orange transition-colors"
+          >
+            Портфоліо
           </a>
           <a 
             href="#about" 
