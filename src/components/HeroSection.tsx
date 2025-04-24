@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
       className="h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
       style={{ backgroundImage: "url('/images/hero-bg.webp')" }}
     >
-      <div className="text-center px-4 sm:px-6">
+      <div className="text-center px-4 sm:px-6 flex flex-col items-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6">Яскрава реклама для вашого бізнесу</h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10">
           ArtMitin створює незабутні білборди, вивіски та LED-екрани, які привертають увагу та підвищують впізнаваність бренду.
@@ -28,4 +28,3 @@ const HeroSection: React.FC = () => {
 };
 
 export default HeroSection;
-
