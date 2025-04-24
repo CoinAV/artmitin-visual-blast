@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
         </p>
         <a 
           href="tel:+380674290579" 
-          className="inline-block py-4 px-8 text-lg font-bold uppercase text-artmitin-pink bg-transparent border-3 border-artmitin-cyan rounded-full shadow-[0_0_10px_#00ddeb,0_0_20px_#00ddeb,0_0_30px_#00ddeb] transition-all duration-300 hover:text-white hover:shadow-[0_0_20px_#00ddeb,0_0_40px_#00ddeb,0_0_60px_#00ddeb] animate-neon-pulse"
+          className="inline-block py-4 px-4 text-lg font-bold uppercase text-artmitin-pink bg-transparent border-3 border-artmitin-cyan rounded-full w-[200px] h-[200px] flex items-center justify-center shadow-[0_0_10px_#00ddeb,0_0_20px_#00ddeb,0_0_30px_#00ddeb] transition-all duration-300 hover:text-white hover:shadow-[0_0_20px_#00ddeb,0_0_40px_#00ddeb,0_0_60px_#00ddeb] animate-neon-pulse"
           style={{ 
             borderWidth: '3px',
             textShadow: '0 0 5px #ff69b4, 0 0 10px #ff69b4'
@@ -28,3 +28,4 @@ const HeroSection: React.FC = () => {
 };
 
 export default HeroSection;
+
