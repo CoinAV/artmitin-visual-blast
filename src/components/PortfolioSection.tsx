@@ -11,27 +11,19 @@ import {
 const projects = [
   {
     id: 1,
-    title: "Світлова вивіска для кав'ярні",
     image: "/images/neon-sign-1.png",
-    description: "Неонова вивіска з LED підсвічуванням"
   },
   {
     id: 2,
-    title: "Об'ємні літери для ТРЦ",
     image: "/images/volume-sign-1.webp",
-    description: "3D літери з внутрішнім підсвічуванням"
   },
   {
     id: 3,
-    title: "LED екран для стадіону",
     image: "/images/led-screen-2.webp",
-    description: "Повнокольоровий LED екран"
   },
   {
     id: 4,
-    title: "Оформлення АЗС",
     image: "/images/design-1.webp",
-    description: "Комплексне брендування АЗС"
   }
 ];
 
@@ -43,7 +35,8 @@ const PortfolioSection: React.FC = () => {
         <div className="relative">
           <Carousel
             opts={{
-              align: "start",
+              align: "center",
+              loop: true
             }}
             className="w-full"
           >
@@ -53,19 +46,15 @@ const PortfolioSection: React.FC = () => {
                   <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <img
                       src={project.image}
-                      alt={project.title}
+                      alt="Проект"
                       className="w-full h-64 object-cover"
                     />
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                      <p className="text-gray-600">{project.description}</p>
-                    </div>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
+            <CarouselPrevious />
+            <CarouselNext />
           </Carousel>
         </div>
       </div>
@@ -74,3 +63,4 @@ const PortfolioSection: React.FC = () => {
 };
 
 export default PortfolioSection;
+
